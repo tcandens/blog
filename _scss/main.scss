@@ -1,4 +1,9 @@
 @import '../bower_components/bourbon/dist/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-@import 'stuff';
+@import '_colors';
+@import '_global';
+// @import '_scale';
+@import '_header';
+@import '_navigation';
+// @import '_bulletin';
