@@ -1,0 +1,53 @@
+/*==============================================================================
+|     #Bulletin styles for cards
++=============================================================================*/
+
+.bulletin {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.logo {
+  position: absolute;
+  margin: 0 10%;
+  width: 520px;
+  height: 600px;
+  background-image: url('../img/logo_med.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.item-card {
+  position: absolute;
+  background-image: url('../img/dots_pattern.png');
+}
+.card-container {
+  position: relative;
+  margin: 1em;
+  max-width: 15em;
+  height: auto;
+  max-height: 10em;
+  background: $offWhite;
+  overflow: hidden;
+}
+.card-handle {
+  float: left;
+  clear: left;
+  width: 1em;
+  min-height: 100%;
+  height: 100%;
+}
+.card {
+  padding: 0.5em;
+  float: right;
+  clear: right;
+  h2 {
+    margin: 0 0 0.5em 0;
+    width: 100%;
+    text-align: center;
+    color: $coralDark;
+  }
+  h1 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+}

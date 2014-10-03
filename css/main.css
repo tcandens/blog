@@ -18,6 +18,23 @@ ul, li {
   padding: 0; }
 
 /*==============================================================================
+|     Main #Typography styles
++=============================================================================*/
+html {
+  font: 1.4em/1.7 "karla", "brandon grotesque", "helvetica", sans-serif; }
+
+h1 {
+  font: 1.7em/1 "jaf-lapture-display", "alegreya", "georgia", serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font: 16px/1 'silkscreen', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+/*==============================================================================
 |     #Header styles
 +=============================================================================*/
 header {
@@ -29,18 +46,75 @@ header {
   background: -webkit-linear-gradient(180deg, #ff5f33, #ff816b) center repeat;
   background: linear-gradient(180deg, #ff5f33, #ff816b) center repeat; }
 
+.hero {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  float: right; }
+
+/*==============================================================================
+|     #Bulletin styles for cards
++=============================================================================*/
+.bulletin {
+  width: 50%;
+  height: 100%;
+  float: left; }
+
+.logo {
+  position: absolute;
+  margin: 0 10%;
+  width: 520px;
+  height: 600px;
+  background-image: url("../img/logo_med.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.item-card {
+  position: absolute;
+  background-image: url("../img/dots_pattern.png"); }
+
+.card-container {
+  position: relative;
+  margin: 1em;
+  max-width: 15em;
+  height: auto;
+  max-height: 10em;
+  background: #fef0cd;
+  overflow: hidden; }
+
+.card-handle {
+  float: left;
+  clear: left;
+  width: 1em;
+  min-height: 100%;
+  height: 100%; }
+
+.card {
+  padding: 0.5em;
+  float: right;
+  clear: right; }
+  .card h2 {
+    margin: 0 0 0.5em 0;
+    width: 100%;
+    text-align: center;
+    color: #ff5f33; }
+  .card h1 {
+    font-size: 1.2em;
+    margin: 0; }
+
 /*==============================================================================
 |     Styles for #Menu Hamburger, with psuedo-elements
 +=============================================================================*/
 nav {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 1em; }
+  position: absolute;
+  padding: 1em;
+  z-index: 1000; }
 
 .nav-button {
   cursor: pointer;
-  margin: 1em; }
+  margin: 1em;
+  width: 3em;
+  height: 3em; }
   .nav-button span, .nav-button span:before, .nav-button span:after {
     display: block;
     content: "";
@@ -49,14 +123,47 @@ nav {
     height: 0.5em;
     cursor: pointer;
     border-radius: 1px;
-    background: #fef0cd; }
+    background: #fef0cd;
+    -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1); }
   .nav-button span:before {
     top: -1em; }
   .nav-button span:after {
     bottom: -1em; }
+  .nav-button.active span {
+    background-color: transparent;
+    box-shadow: none; }
+  .nav-button.active span:before, .nav-button.active span:after {
+    top: 0; }
+  .nav-button.active span:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .nav-button.active span:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .closed {
   visibility: hidden;
-  display: none; }
+  height: 0; }
+
+/*==============================================================================
+|     Main #Article styles
++=============================================================================*/
+.article {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 42.6842%;
+  margin-left: 45.85264%;
+  padding: 1em; }
+  .article:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

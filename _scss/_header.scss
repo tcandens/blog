@@ -1,0 +1,19 @@
+/*==============================================================================
+|     #Header styles
++=============================================================================*/
+
+header {
+  display: block;
+  max-width: 100%;
+  height: 80%;
+}
+.main-header {
+  @include background(linear-gradient(180deg, $coralDark, $coralLight) center repeat);
+}
+
+.hero {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  float: right;
+}
