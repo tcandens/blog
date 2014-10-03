@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "authors": [
+    "tcandens <joey.thies@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "bourbon": "~4.0.2",
+    "neat": "~1.6.0"
+  }
+}
