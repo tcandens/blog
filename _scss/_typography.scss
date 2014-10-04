@@ -6,14 +6,15 @@ $karla: 'karla', 'brandon grotesque', 'helvetica', sans-serif;
 $lapture: 'jaf-lapture-display', 'alegreya', 'georgia', serif;
 
 html {
-  font: 1.4em/1.7 $karla;
+  font: 1.4em/1.7 $lapture;
+  color: $blueBlack;
+  font-weight: 400;
 }
 
 h1 {
   font: 1.7em/1 $lapture;
   font-weight: 700;
   margin: 0;
-  padding: 0;
 }
 h2 {
   font: 16px/1 'silkscreen', sans-serif;

@@ -7,3 +7,9 @@
   @include shift(4);
   padding: 1em;
 }
+
+.article-title {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}

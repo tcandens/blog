@@ -21,12 +21,22 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 8001,
+          base: 'www-root'
+        }
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('default', ['sass']);
+  grunt.registerTask('serve-watch', ['connect', 'sass', 'watch'])
 
 };
