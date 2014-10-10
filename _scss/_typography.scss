@@ -5,11 +5,12 @@
 $karla: 'karla', 'brandon grotesque', 'helvetica', sans-serif;
 $lapture: 'jaf-lapture-display', 'alegreya', 'georgia', serif;
 $facit: 'jaf-facit-web', sans-serif;
+$museo: 'museo-sans', sans-serif;
 
 html {
-  font: 1.4em/1.7 $facit;
+  font: 1.4em/1.7 $museo;
   color: $blueBlack;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 h1 {

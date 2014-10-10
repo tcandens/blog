@@ -21,9 +21,9 @@ ul, li {
 |     Main #Typography styles
 +=============================================================================*/
 html {
-  font: 1.4em/1.7 "jaf-facit-web", sans-serif;
+  font: 1.4em/1.7 "museo-sans", sans-serif;
   color: #161936;
-  font-weight: 600; }
+  font-weight: 300; }
 
 h1 {
   font: 1.7em/1 "jaf-lapture-display", "alegreya", "georgia", serif;
@@ -113,7 +113,16 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/dots_pattern.png"); }
+  background-image: url("../img/dots_pattern.png");
+  -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .recent-item-card:hover {
+    -webkit-transform: translate3d(0, -5px, 0);
+    -moz-transform: translate3d(0, -5px, 0);
+    -ms-transform: translate3d(0, -5px, 0);
+    -o-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
 
 .card-container {
   position: relative;
@@ -165,7 +174,8 @@ header {
 nav {
   position: absolute;
   padding: 1em;
-  z-index: 1000; }
+  z-index: 1000;
+  height: 0; }
 
 .nav-button {
   cursor: pointer;
@@ -207,15 +217,29 @@ nav {
     transform: rotate(-45deg); }
 
 .nav-list {
+  height: auto;
   margin: 2em 0;
-  background-image: url("../img/dots_pattern.png"); }
+  overflow: hidden;
+  background-image: url("../img/dots_pattern_white.png"); }
   .nav-list li {
     margin: 0;
-    padding: 10px;
-    color: #fef0cd;
+    color: #161936;
     font-size: 3em;
     text-align: center; }
-    .nav-list li:hover {
+  .nav-list a {
+    -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -moz-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0.5em;
+    text-decoration: none;
+    font-family: "museo-sans", sans-serif;
+    font-weight: 600;
+    color: #fef0cd; }
+    .nav-list a:hover {
+      color: #ff816b;
       background: #161936; }
 
 .closed {

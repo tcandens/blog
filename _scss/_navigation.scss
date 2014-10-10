@@ -7,7 +7,7 @@ nav {
   padding: 1em;
   z-index: 1000;
   // width: 5em;
-  // height: 5em;
+  height: 0;
 }
 .nav-button {
   cursor: pointer;
@@ -50,16 +50,33 @@ nav {
 }
 
 .nav-list {
+  height: auto;
   margin: 2em 0;
-  background-image: url('../img/dots_pattern.png');
+  overflow: hidden;
+  background-image: url('../img/dots_pattern_white.png');
   li {
     margin: 0;
-    padding: 10px;
-    color: $offWhite;
+    // padding: 10px;
+    color: $blueBlack;
     font-size: 3em;
     text-align: center;
     // background: $offWhite;
     &:hover {
+      // background: $blueBlack;
+    }
+  }
+  a {
+    @include transition(all 400ms $ease-out-cubic);
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0.5em;
+    text-decoration: none;
+    font-family: $museo;
+    font-weight: 600;
+    color: $offWhite;
+    &:hover {
+      color: $coralLight;
       background: $blueBlack;
     }
   }

@@ -37,5 +37,4 @@ $(function() {
     console.log("x: " + newX + " | y: " + newY );
   });
 
-
 });
