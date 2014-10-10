@@ -21,13 +21,13 @@ ul, li {
 |     Main #Typography styles
 +=============================================================================*/
 html {
-  font: 1.4em/1.7 "jaf-lapture-display", "alegreya", "georgia", serif;
+  font: 1.4em/1.7 "jaf-facit-web", sans-serif;
   color: #161936;
-  font-weight: 400; }
+  font-weight: 600; }
 
 h1 {
   font: 1.7em/1 "jaf-lapture-display", "alegreya", "georgia", serif;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0; }
 
 h2 {
@@ -41,7 +41,12 @@ h2 {
 header {
   display: block;
   max-width: 100%;
-  height: 80%; }
+  height: 80%;
+  display: block; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .main-header {
   background: -webkit-linear-gradient(180deg, #ff5f33, #ff816b) center repeat;
@@ -73,6 +78,7 @@ header {
     margin: 0 auto;
     height: 100%;
     width: auto;
+    min-width: 100%;
     text-align: relative; }
 
 /*==============================================================================
@@ -101,25 +107,13 @@ header {
   background-position: center center; }
 
 .recent-items {
-  position: relative;
-  top: 100px;
-  left: 100px; }
+  position: relative; }
 
-.item-card {
+.recent-item-card {
   position: absolute;
+  top: 0;
+  left: 0;
   background-image: url("../img/dots_pattern.png"); }
-  .item-card:nth-of-type(2) {
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  .item-card:nth-of-type(3) {
-    -webkit-transform: translate3d(0, 200%, 0);
-    -moz-transform: translate3d(0, 200%, 0);
-    -ms-transform: translate3d(0, 200%, 0);
-    -o-transform: translate3d(0, 200%, 0);
-    transform: translate3d(0, 200%, 0); }
 
 .card-container {
   position: relative;
@@ -130,6 +124,7 @@ header {
   overflow: hidden; }
 
 .card-handle {
+  cursor: move;
   float: left;
   clear: left;
   width: 2em; }
@@ -152,9 +147,7 @@ header {
 
 .card {
   margin-left: 2em;
-  padding: 0.5em;
-  float: right;
-  clear: right; }
+  padding: 8px 10px; }
   .card h2 {
     margin: 0 0 0.5em 0;
     width: 100%;
@@ -212,6 +205,18 @@ nav {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg); }
+
+.nav-list {
+  margin: 2em 0;
+  background-image: url("../img/dots_pattern.png"); }
+  .nav-list li {
+    margin: 0;
+    padding: 10px;
+    color: #fef0cd;
+    font-size: 3em;
+    text-align: center; }
+    .nav-list li:hover {
+      background: #161936; }
 
 .closed {
   visibility: hidden;

@@ -49,6 +49,22 @@ nav {
   }
 }
 
+.nav-list {
+  margin: 2em 0;
+  background-image: url('../img/dots_pattern.png');
+  li {
+    margin: 0;
+    padding: 10px;
+    color: $offWhite;
+    font-size: 3em;
+    text-align: center;
+    // background: $offWhite;
+    &:hover {
+      background: $blueBlack;
+    }
+  }
+}
+
 .closed {
   visibility: hidden;
   height: 0;

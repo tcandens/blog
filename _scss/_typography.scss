@@ -4,16 +4,17 @@
 
 $karla: 'karla', 'brandon grotesque', 'helvetica', sans-serif;
 $lapture: 'jaf-lapture-display', 'alegreya', 'georgia', serif;
+$facit: 'jaf-facit-web', sans-serif;
 
 html {
-  font: 1.4em/1.7 $lapture;
+  font: 1.4em/1.7 $facit;
   color: $blueBlack;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h1 {
   font: 1.7em/1 $lapture;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
 }
 h2 {
