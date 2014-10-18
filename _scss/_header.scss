@@ -10,6 +10,7 @@ header {
 }
 .main-header {
   @include background(linear-gradient(180deg, $coralDark, $coralLight) center repeat);
+  // @include background(linear-gradient(180deg, $mint, $coralLight) center repeat);
 }
 
 .hero {

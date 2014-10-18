@@ -10,7 +10,8 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: #fef0cd; }
 
 ul, li {
   list-style: none;
@@ -21,17 +22,22 @@ ul, li {
 |     Main #Typography styles
 +=============================================================================*/
 html {
-  font: 1.4em/1.7 "museo-sans", sans-serif;
+  font: 1.4em/1.7 "karla", "brandon grotesque", "helvetica", sans-serif;
   color: #161936;
   font-weight: 300; }
 
 h1 {
-  font: 1.7em/1 "jaf-lapture-display", "alegreya", "georgia", serif;
+  font: 1.7em/1 "jaf-lapture-display", "alegreya", "georgia", serif, serif;
   font-weight: 600;
   margin: 0; }
 
 h2 {
   font: 16px/1 'silkscreen', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font: 1em/1 "karla", "brandon grotesque", "helvetica", sans-serif, sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -91,6 +97,16 @@ header {
   max-height: 100%;
   float: left; }
 
+.bulletin-title {
+  position: relative;
+  margin: 0;
+  top: 43px;
+  left: 3em;
+  width: 431px;
+  height: 41px;
+  background-image: url("../img/recent_items_title.png");
+  background-size: auto; }
+
 .logo {
   position: absolute;
   left: 50%;
@@ -114,19 +130,16 @@ header {
   top: 0;
   left: 0;
   background-image: url("../img/dots_pattern.png");
-  -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  -moz-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  background-color: transparent;
+  -webkit-transition: background-color 200ms ease-in;
+  -moz-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in; }
   .recent-item-card:hover {
-    -webkit-transform: translate3d(0, -5px, 0);
-    -moz-transform: translate3d(0, -5px, 0);
-    -ms-transform: translate3d(0, -5px, 0);
-    -o-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0); }
+    background-color: #00335e; }
 
 .card-container {
   position: relative;
-  margin: 1em;
+  margin: 0.75em;
   max-width: 15em;
   height: auto;
   background: #fef0cd;
@@ -217,34 +230,42 @@ nav {
     transform: rotate(-45deg); }
 
 .nav-list {
-  height: auto;
-  margin: 2em 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 400px;
+  max-height: 400px;
   overflow: hidden;
-  background-image: url("../img/dots_pattern_white.png"); }
+  background-image: url("../img/dots_pattern_white.png");
+  -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1); }
   .nav-list li {
     margin: 0;
     color: #161936;
     font-size: 3em;
     text-align: center; }
   .nav-list a {
-    -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
-    -moz-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
-    transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
     display: block;
     width: 100%;
     height: 100%;
     padding: 10px 0.5em;
     text-decoration: none;
-    font-family: "museo-sans", sans-serif;
-    font-weight: 600;
+    font-family: "karla", "brandon grotesque", "helvetica", sans-serif;
+    font-weight: 900;
     color: #fef0cd; }
     .nav-list a:hover {
       color: #ff816b;
-      background: #161936; }
+      background: #00335e; }
 
 .closed {
-  visibility: hidden;
-  height: 0; }
+  bottom: 0px;
+  -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 /*==============================================================================
 |     Main #Article styles

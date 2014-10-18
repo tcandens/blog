@@ -14,9 +14,6 @@ $(function() {
   var $bulletin = $('.bulletin');
   var bulletinWidth = $bulletin.innerWidth();
   var bulletinHeight = $bulletin.innerHeight();
-  // console.log("x: " + width + " | y: " + height );
-  // Iterate through each card
-  var delay = 500
   $recentItems.each( function( index ) {
     var width = $( this ).outerWidth();
     var height = $( this ).outerHeight();
@@ -24,17 +21,21 @@ $(function() {
     var randX = Math.random();
     var randY = Math.random();
     var canvasWidth = bulletinWidth - width;
-    var canvasHeight = bulletinHeight - height + 100;
+    var canvasHeight = bulletinHeight - height;
     var newX = Math.floor( canvasWidth * randX );
-    var newY = Math.floor( canvasHeight * randY );
+    var newY = Math.floor( canvasHeight * randY ) + 50;
 
-    $( this ).delay(delay)
-      .css("top", newY)
+    $( this ).css("top", newY)
       .css("left", newX);
 
-    delay += 500;
-    console.log("width: " + width + " | height: " + height );
-    console.log("x: " + newX + " | y: " + newY );
   });
 
 });
+
+window.onload = function() {
+
+  var elem = document.querySelector(".recent-item-card");
+  var draggie = new Draggabilly( elem, {
+    handle: '.card-handle'
+  });
+};

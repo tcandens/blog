@@ -9,6 +9,16 @@
   max-height: 100%;
   float: left;
 }
+.bulletin-title {
+  position: relative;
+  margin: 0;
+  top: 43px;
+  left: 3em;
+  width: 431px;
+  height: 41px;
+  background-image: url('../img/recent_items_title.png');
+  background-size: auto;
+}
 .logo {
   position: absolute;
   left: 50%;
@@ -30,10 +40,14 @@
   top: 0;
   left: 0;
   background-image: url('../img/dots_pattern.png');
-  @include transition(all 400ms $ease-out-cubic);
+  background-color: transparent;
+  @include transition(background-color 200ms ease-in);
+  // @include transition(background-image 200ms ease-in);
   // background: ;
   &:hover {
-    @include transform(translate3d(0,-5px,0));
+    // @include transform(translate3d(0,-5px,0));
+    // background-image: none;
+    background-color: $blue;
   }
   // &:nth-of-type(2) {
   //   @include transform(translate3d(0,100%,0));
@@ -45,7 +59,7 @@
 }
 .card-container {
   position: relative;
-  margin: 1em;
+  margin: 0.75em;
   max-width: 15em;
   height: auto;
   background: $offWhite;
