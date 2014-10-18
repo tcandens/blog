@@ -281,8 +281,16 @@ nav {
     margin-right: 0; }
 
 .article-title {
-  z-index: 1;
+  margin: 1em 0 1em 50px;
+  color: white;
+  font-size: 3em; }
+
+.article-title-backing {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 80%;
+  background-image: url("../img/dots_pattern_white.png"); }
 
 /*# sourceMappingURL=main.css.map */
