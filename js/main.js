@@ -1,7 +1,5 @@
 $(function() {
 
-  // document.removeClass('no-js').addClass('js-ready');
-
   // Toggle navigation Hamburger
   $('.nav-button').on('click', function() {
     $(this).toggleClass('active');
@@ -30,12 +28,12 @@ $(function() {
 
   });
 
+  // Draggabilly
+  // var cards = document.querySelector(".recent-item-card");
+  // var drags = new Draggabilly( cards, { handle: ".card-handle" })
+
+  // jQuery UI Draggable
+  $('#doodle').draggable();
+  $('.recent-item-card').draggable({ handle: ".card-handle"});
+
 });
-
-window.onload = function() {
-
-  var elem = document.querySelector(".recent-item-card");
-  var draggie = new Draggabilly( elem, {
-    handle: '.card-handle'
-  });
-};

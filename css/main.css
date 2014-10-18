@@ -126,6 +126,7 @@ header {
   position: relative; }
 
 .recent-item-card {
+  z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
@@ -140,7 +141,7 @@ header {
 .card-container {
   position: relative;
   margin: 0.75em;
-  max-width: 15em;
+  width: 15em;
   height: auto;
   background: #fef0cd;
   overflow: hidden; }
@@ -180,6 +181,9 @@ header {
     text-align: center;
     font-size: 1.2em;
     margin: 0; }
+
+.ui-draggable-dragging .recent-item-card {
+  z-index: 1000; }
 
 /*==============================================================================
 |     Styles for #Menu Hamburger, with psuedo-elements
